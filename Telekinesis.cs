@@ -34,6 +34,7 @@ public class Telekinesis : MonoBehaviour
     public Transform objectPoint;
     public float threshold = 1.5f;
     public float throwStrength;
+
     private const string moveableTag = "Moveable";
     private Vector3 objectVector;
     private bool throwing = false;
@@ -85,6 +86,7 @@ public class Telekinesis : MonoBehaviour
             target.transform.position = objectVector;
         }
     }
+
     public void Throw(GameObject target)
     {
         Rigidbody targetRb = target.GetComponent<Rigidbody>();
